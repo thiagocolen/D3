@@ -1,0 +1,29 @@
+{
+  "name": "my-d3-exercises",
+  "version": "0.0.1",
+  "description": "This is my d3 exercises project",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiagocolen/D3.git"
+  },
+  "author": "Thiago Colen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thiagocolen/D3/issues"
+  },
+  "homepage": "https://github.com/thiagocolen/D3#readme",
+  "dependencies": {
+    "d3": "^4.6.0",
+    "material-design-lite": "^1.3.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.1"
+  }
+}
