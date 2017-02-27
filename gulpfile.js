@@ -24,9 +24,7 @@ gulp.task('build', function() {
         ])
         .pipe(concat('styles.css'))
         .pipe(gulp.dest('./app/'));
-
 });
-
 
 
 // Static server
