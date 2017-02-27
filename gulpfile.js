@@ -11,15 +11,19 @@ gulp.task('build', function() {
     // scripts
     gulp.src([
             './node_modules/d3/build/d3.js',
+            './node_modules/material-design-lite/dist/material.min.js',
             './app/scripts/**/*.js'
         ])
         .pipe(concat('scripts.js'))
         .pipe(gulp.dest('./app/'));
 
-
     //css
-    // gulp.src(['./src/client/assets/styles/angular-chart.css', './node_modules/angular-hotkeys/build/hotkeys.css'])
-    //     .pipe(gulp.dest('./build/assets/styles/'));
+    gulp.src([
+            './node_modules/material-design-lite/dist/material.min.css',
+            './app/styles/**/*.css'
+        ])
+        .pipe(concat('styles.css'))
+        .pipe(gulp.dest('./app/'));
 
 });
 
@@ -42,4 +46,4 @@ gulp.task('default', ['browser-sync'], function() {
 
 
 // execute:
-// gulp
+// gulp build default
